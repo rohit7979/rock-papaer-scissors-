@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper Scissors</title>
+    <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <main class="container">
+
+        <h1 id="title"><span style="color: #ff5353">Rock</span> <span style="color: #f1dd00">Paper</span> <span style="color: #3e95ff">Scissors</span></h1>
+
+        <div class="scoreBoard">
+            <div class="userBoard">
+                <p>You: <span id="user-score">0</span></p>
+                <img class="playerImg" id="user-choice-img" src="/images/rock2.png" alt="rock">
+            </div>
+
+            <div class="divider"></div>
+            
+            <div class="cpuBoard">
+                <p>CPU: <span id="cpu-score">0</span></p>
+                <img class="cpuImg" id="cpu-choice-img" src="/images/paper2.png" alt="paper">
+            </div>
+        </div>
+
+        <div class="msgBoard">
+            <p class="round">Round : </p>
+            <div class="msgBox">
+                <p class="msg">Player that reaches the five wins first <br> will win the game.</p>
+                <button class="reset">Play again</button>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button class="choice" id="rock"><img src="/images/rock2.png" alt="rock"></button>
+            <button class="choice" id="paper"><img src="/images/paper2.png" alt="paper"></button>
+            <button class="choice" id="scissors"><img src="/images/scissors2.png" alt="scissors"></button>
+        </div>
+
+
+    
+    </main>
+    
+</body>
+<script src="app.js"></script>
+</html>
